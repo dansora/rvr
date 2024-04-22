@@ -136,7 +136,28 @@ ul {
     }
 }
 
+.header {
+    margin-top: 22px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.954), rgba(255, 255, 0, 0.897));
+    min-height: 200px;
+}
 
+.header h1 {
+    font-size: 2rem;
+    color: #fcfc05;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 150px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.header p {
+    color: #fff;
+}
 
 .radio-section .container {
     display: flex;
