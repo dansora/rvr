@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./src/font-awesome-4.7.0/scss/_animated.scss">
+    <link rel="stylesheet" href="./src/font-awesome-4.7.0/fonts/fontawesome-webfont.svg">
+    <link rel="stylesheet" href="player.css">
+    <link rel="icon" href="/src/img/RVR sigla1 web.png">
+    <title>Radio Vocea Romanilor - Contact</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./src/img/RVR_Buton_logo.jpeg" alt="rvr-icon">
+                RVR
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="../../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Acasă</a>
+                </li>
+                <li class="nav-item">
+                    <a href="stiri"><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp; Știri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sport"><i class="fa fa-soccer-ball-o" aria-hidden="true"></i>&nbsp; Sport</a>
+                </li>
+                <li class="nav-item">
+                    <a href="meteo"><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>&nbsp; Meteo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="despre"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Despre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="form">
+            <form action="submit">
+                <h3>Contact us</h3>
+                <label for="name">Name <input type="text" name="Name" placeholder="type your name"></label>
+                <label for="email">email <input type="email" placeholder="your email"></label>
+                <button class="btn">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <section class="radio-section">
+        <div class="container">
+            <div class="radio-player">
+                <!-- radio player for Radio Vocea Romanilor -->
+                <audio src="/src/java/radio-script.js" class="visually-hidden" id="stream">
+                    <!-- radio stuff here -->
+                </audio>
+                <div class="player-controls">
+                    <button name="play-pause" class="button play-pause-button" aria-label="Play/Pause">
+                        <i class="fa fa-play" aria-hidden></i>
+                    </button>
+                    <div class="volume-and-title">
+                        <div class="currently-playing" aria-label="Currently Playing">
+                            <span class="currently-playing-title">Asculți Radio Vocea Românilor</span>
+                            <span class="currently-playing-label">Now playing on Radio Vocea Românilor</span>
+                        </div>
+                        <div class="volume-controls">
+                            <button name="mute" class="button mute-button" aria-label="Mute/Unmute">
+                                <i class="fa fa-volume-down" aria-hidden></i>
+                            </button>
+                            <input type="range" name="volume" class="volume" min="0" max="1" step="0.05" value="0.2"
+                                aria-label="Volume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            &copy; Romanians Voice Radio
+        </div>
+    </footer>
+    
+    <script src="../java/radio-script.js"></script>
+    <script src="../java/nav-menu.js"></script>
+</body>
+</html>
