@@ -5,6 +5,8 @@
 }
 
 body {
+    display: grid;
+    grid-template-columns: 9;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -32,7 +34,6 @@ ul {
 }
 
 .navbar {
-    display: flex;
     background: #3474e6;
     color: #fff;
     height: 70px;
@@ -232,6 +233,22 @@ ul {
         box-shadow: 0 0 15px -4px #F59E0B;
     }
 }
+
+.container .form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    border: 1px solid #3474e6;
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    padding: 20px;
+}
+
+
 
 .footer .container {
     display: block;
