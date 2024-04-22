@@ -292,6 +292,7 @@ ul {
 .footer .container {
     display: block;
     height: 30px;
+    text-align: center;
     /* justify-items: center;
     /* z-index: 999;
     flex-direction: column;
